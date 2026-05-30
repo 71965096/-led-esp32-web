@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control IoT - ESP32</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+
+    <div class="contenedor">
+        <h1>NÚCLEO DE CONTROL IoT</h1>
+        
+        <div class="led-panel">
+            <div id="ledVirtual" class="led apagado"></div>
+            <p id="estadoTexto" class="texto-estado">SISTEMA: APAGADO</p>
+        </div>
+
+        <div class="botones">
+            <button id="btnEncender" class="btn encender">ENCENDER</button>
+            <button id="btnApagar" class="btn apagar">APAGAR</button>
+        </div>
+    </div>
+
+    <script src="ui.js"></script>
+    <script src="conexion.js"></script>
+</body>
+</html>
